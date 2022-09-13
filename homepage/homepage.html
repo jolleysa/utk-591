@@ -39,6 +39,23 @@
     <div> <img class="chart" src="draft.jpg" alt="Drafting Table"> Drafting Touch Table</div>
     <div> <img class="chart" src="work.jpg" alt="Placeholder"> Placeholder</div>
 </div>
+<p id="person"></p>
+<script>
+    const backpack = {
+        color: "red",
+        unit: "inch",
+        animal: "cat",
+        language: "spanish",
+        lidOpen: "false",
+    }
+    const person = {
+        firstname: "John",
+        lastname: "Doe",
+        fullname:  function() {return this.firstname + " " + this.lastname;}
+    }
+    document.getElementById("person")["innerHTML"] = person.fullname();
+    console.log("the backpack:", backpack);
+</script>
 <footer>
     <p class="footer"> &#128222;: (423) 335 - 4848 </p>
     <p class="footer">&#128233;: stephaniej@charter.net </p>
