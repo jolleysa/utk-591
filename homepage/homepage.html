@@ -38,23 +38,22 @@
     <div> <img class="chart" src="route.jpg" alt="Placeholder - Router">Placeholder </div>
     <div> <img class="chart" src="draft.jpg" alt="Drafting Table"> Drafting Touch Table</div>
     <div> <img class="chart" src="work.jpg" alt="Placeholder"> Placeholder</div>
+    <button onclick="changeColor(this)" class="button"> Click Me! </button>
 </div>
 <p id="person"></p>
 <script>
-    const backpack = {
+    function changeColor(element, color){
+        element.style.backgroundColor = 'green';
+        element.style.borderColor = 'navy';
+        element.style.color = 'black';
+    }
+    const test = {
         color: "red",
         unit: "inch",
         animal: "cat",
         language: "spanish",
-        lidOpen: "false",
     }
-    const person = {
-        firstname: "John",
-        lastname: "Doe",
-        fullname:  function() {return this.firstname + " " + this.lastname;}
-    }
-    document.getElementById("person")["innerHTML"] = person.fullname();
-    console.log("the backpack:", backpack);
+    console.log("console log test", test);
 </script>
 <footer>
     <p class="footer"> &#128222;: (423) 335 - 4848 </p>

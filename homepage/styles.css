@@ -63,7 +63,7 @@ img{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 5px 100px 100px 100px; }
+    margin: 5px 100px 50px 100px; }
 .flex-container > div {
     color:#2e3550;
     margin: 10px;
@@ -72,3 +72,15 @@ img{
     height: 230px;
     font-size: 16px;
     text-align: center;}
+.button {
+    background: #2e3550;
+    margin: 50px 0px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0;
+    border: 3px solid #a7aec6;
+}
