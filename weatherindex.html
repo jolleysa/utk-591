@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" >
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="weatherstyle.css" >
     <title>Weather Assignment</title>
 </head>
 <body>
@@ -20,7 +20,16 @@
         </div>
         <div class="tempdescription"> This is nice weather. </div>
     </div>
+    <div class="container">
+        <div class="timerDisplay"> 00 : 00 : 000 </div>
+         <div class="buttons">
+             <button id="pause" onclick="stop();">Pause</button>
+             <button id="start" onclick="start();">Start</button>
+             <button id="reset" onclick="reset();">Reset</button>
+        </div>
+    </div>
 <script src="skycons.js"></script>
-<script src="apps.js"></script>
+<script src="weatherapps.js"></script>
+<script src="timer.js"></script>
 </body>
 </html>
