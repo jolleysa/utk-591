@@ -4,8 +4,8 @@ window.addEventListener("load",() => {
     let tempdescription = document.querySelector('.tempdescription');
     let tempdegree = document.querySelector('.tempdegree');
     let locationTimezone = document.querySelector(".locationTimezone");
-    let degreesection = document.querySelector(".temperature");
-    const temperatureSpan = document.querySelector(".temperature span");
+    let degreesection = document.querySelector(".temperature-section");
+    const temperatureSpan = document.querySelector(".temperature-section span");
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -20,15 +20,19 @@ window.addEventListener("load",() => {
             })
             .then(data =>{
                 console.log(data);
-                const {currentConditions(temp), conditions, icon}= data.currently;
+                const {temp, conditions, icon}= data.currently;
+                
                 //set DOM Elements from the API
-                tempdegree.textContent = currentConditions(temp);
+                tempdegree.textContent = temp;
                 tempdescription.textContent = conditions;
-                locationTimezone.textContent = data.timezone;
+                locationTimezone.textContent = timezone;
+                
                 //FORMULA for celsius
-                let celsius = (temperature - 32) * (5/9);
+                let celsius = (temp - 32) * (5/9);
+                
                 //set Icon
-                setIcons(icon, document.querySelector('icon'));
+                setIcons(icon, document.querySelector("icon"));
+                
                 //Change temp degree
                 degreesection.addEventListener('click', ()=>{
                     if(temperatureSpan.textContent === "F") {
