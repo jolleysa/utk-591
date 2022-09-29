@@ -20,7 +20,7 @@ window.addEventListener("load",() => {
             })
             .then(data =>{
                 console.log(data);
-                const {temp, conditions, icon}= data.currently;
+                const {temp, conditions, timezone, icon}= data.currently;
                 
                 //set DOM Elements from the API
                 tempdegree.textContent = temp;
