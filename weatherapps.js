@@ -28,12 +28,14 @@ window.addEventListener("load",() => {
 
                     const {timezone}=data;
                     locationTimezone.textContent = timezone;
+                    //set Icon
+                    setIcons(icon, document.querySelector(".icon"));
+                    //add icon for celsius
+
+                    let cel = document.querySelector(".cel")
 
                     //FORMULA for fahrenheit
                     let fahrenheit = (temp * (9/5) + 32);
-
-                    //set Icon
-                    setIcons(icon, document.querySelector("icon"));
 
                     //Change temp degree
                     degreesection.addEventListener('click', ()=>{
