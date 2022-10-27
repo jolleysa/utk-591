@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#2F96A3,#303E8F);
+    font-family: sans-serif;
+    color: white;}
+.location,
+.temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+.temperature{
+    flex-direction: column;
+}
+.degreesection{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degreesection span {
+    margin: 10px;
+    font-size: 30px;
+}
+.degreesection h2{
+    font-size: 40px;
+}
+.container{
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 500px;
+    padding: 20px 0 20px 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+.timerDisplay{
+    position: relative;
+    width: 92%;
+    background: #2F96A3;
+    left: 4%;
+    padding: 40px 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.buttons{
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: #80B3FF;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons button:nth-last-child(2){
+    background-color: #303E8F;
+}
+.buttons button:nth-last-child(1){
+    background-color: #8C80FF;
+    color: #ffffff;
+}
